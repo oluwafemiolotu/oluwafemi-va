@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oluwafemi Olotu | Professional Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --accent: #c5a059; 
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --text: #333;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--text); background: var(--light-bg); scroll-behavior: smooth; }
+
+        /* Navigation */
+        nav { background: var(--white); height: 70px; display: flex; justify-content: center; align-items: center; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        nav a { margin: 0 15px; text-decoration: none; color: var(--text); font-weight: 600; font-size: 0.85rem; transition: 0.3s; }
+        nav a:hover { color: var(--accent); }
+
+        /* Hero */
+        .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: var(--primary); color: white; padding-top: 70px; }
+        .hero img { width: 180px; height: 180px; border-radius: 50%; border: 4px solid var(--accent); margin-bottom: 20px; object-fit: cover; }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; color: #ccc; }
+
+        /* Section Global */
+        section { padding: 80px 20px; max-width: 1100px; margin: auto; }
+        .section-header { text-align: center; margin-bottom: 40px; }
+        .underline { width: 50px; height: 3px; background: var(--accent); margin: 10px auto; }
+
+        /* Content Cards */
+        .card { background: var(--white); padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+
+        /* Lists */
+        ul { list-style: none; }
+        ul li { margin-bottom: 12px; padding-left: 25px; position: relative; }
+        ul li::before { content: "\f058"; font-family: "Font Awesome 5 Free"; font-weight: 900; color: var(--accent); position: absolute; left: 0; }
+
+        /* Images / Samples */
+        .img-box { background: white; padding: 10px; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; }
+        .img-box img { width: 100%; height: auto; display: block; image-rendering: -webkit-optimize-contrast; }
+
+        /* Experience Timeline */
+        .exp-item { border-left: 3px solid var(--accent); padding-left: 20px; margin-bottom: 30px; position: relative; }
+        .exp-item h3 { color: var(--primary); font-size: 1.2rem; }
+        .exp-item .company { font-weight: bold; color: var(--accent); margin-bottom: 5px; display: block; }
+
+        footer { background: var(--primary); color: white; padding: 60px 20px; text-align: center; }
+        footer a { color: var(--accent); text-decoration: none; font-weight: bold; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            nav a { margin: 0 8px; font-size: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#about">ABOUT</a>
+    <a href="#services">SERVICES</a>
+    <a href="#samples">WORK SAMPLES</a>
+    <a href="#experience">EXPERIENCE</a>
+    <a href="#education">EDUCATION</a>
+    <a href="#contact">CONTACT</a>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <img src="profile.jpg" alt="Oluwafemi Olotu">
+        <h1>Oluwafemi Olotu</h1>
+        <p>Virtual Assistant | Administrative & Operations Specialist</p>
+        <p style="font-size: 0.9rem; margin-top: 10px; letter-spacing: 2px;">DETAIL-ORIENTED | RELIABLE | PROACTIVE</p>
+    </div>
+</section>
+
+<section id="about">
+    <div class="section-header">
+        <h2>About Me</h2>
+        <div class="underline"></div>
+    </div>
+    <div class="card">
+        <p>I am a highly organized and proactive Virtual Assistant with experience supporting executives, operations teams, and customer-facing functions across fast-paced environments. My strength lies in keeping things running smoothly behind the scenes—managing details, coordinating tasks, and ensuring accuracy, compliance, and clear communication.</p>
+        <p style="margin-top: 15px;">I take pride in anticipating needs, meeting deadlines, and supporting teams so they can focus on higher-level priorities.</p>
+    </div>
+</section>
+
+<section id="services" style="background: #f1f1f1; max-width: 100%;">
+    <div style="max-width: 1100px; margin: auto;">
+        <div class="section-header">
+            <h2>Services I Offer</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <h3>Admin Support</h3>
+                <ul>
+                    <li>Executive & Administrative Support</li>
+                    <li>Calendar and Email Management</li>
+                    <li>Document Preparation & Reporting</li>
+                    <li>File and Records Management</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Operations</h3>
+                <ul>
+                    <li>Customer Support & Client Communication</li>
+                    <li>CRM Management</li>
+                    <li>Task & Project Coordination</li>
+                    <li>Operations & Office Support</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="samples">
+    <div class="section-header">
+        <h2>Professional Work Samples</h2>
+        <div class="underline"></div>
+    </div>
+    <div class="grid">
+        <div>
+            <div class="img-box">
+                <img src="spreadsheet.jpg" alt="Data Entry Sample">
+            </div>
+            <h4 style="text-align: center;">Accurate Data Entry & Records</h4>
+        </div>
+        <div>
+            <div class="img-box">
+                <img src="calendar.jpg" alt="Calendar Management Sample">
+            </div>
+            <h4 style="text-align: center;">Executive Calendar Management</h4>
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <div class="section-header">
+        <h2>Experience</h2>
+        <div class="underline"></div>
+    </div>
+    <div class="exp-item">
+        <h3>Executive Virtual Assistant</h3>
+        <span class="company">Stephanas Fortunas & Company Ltd.</span>
+    </div>
+    <div class="exp-item">
+        <h3>Operations & Team Leadership</h3>
+        <span class="company">Noor Takaful Insurance Ltd.</span>
+        <p style="font-size: 0.9rem;">Customer Service Manager | Team Lead, Group Life Insurance | Acting Department Head</p>
+    </div>
+    <div class="exp-item">
+        <h3>Administrative & Operations Support</h3>
+        <span class="company">Armor Accounting Services & Associates</span>
+    </div>
+</section>
+
+<section id="education" style="background: #f1f1f1; max-width: 100%;">
+    <div style="max-width: 1100px; margin: auto;">
+        <div class="section-header">
+            <h2>Education & Certifications</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <p><strong>Postgraduate Diploma (2023)</strong><br>Islamic Banking & Finance - Nungu Business School</p>
+                <hr style="margin: 15px 0; border: 0; border-top: 1px dotted #ccc;">
+                <p><strong>B.Sc. Insurance (2017)</strong><br>University of Lagos</p>
+            </div>
+            <div class="card">
+                <p><strong>Professional Associate</strong><br>Chartered Insurance Institute of Nigeria</p>
+                <hr style="margin: 15px 0; border: 0; border-top: 1px dotted #ccc;">
+                <p><strong>Asana Certification</strong><br>Collaborative Work Management</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <h2>Let's Connect</h2>
+    <p style="margin: 20px 0;">Email: <a href="mailto:officialoluwafemiolotu@gmail.com">officialoluwafemiolotu@gmail.com</a></p>
+    <p>Phone: +234-706-529-0692</p>
+    <p style="margin-top: 40px; font-size: 0.8rem; opacity: 0.5;">&copy; 2026 Oluwafemi Olotu. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
